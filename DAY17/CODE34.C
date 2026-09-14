@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+ 
+
+int main() {
+
+   int n, i, flag = 0;
+
+ 
+
+   printf("Enter a number: ");
+
+   scanf("%d", &n);
+
+ 
+
+   if (n <= 1) {
+
+       printf("Not a Prime Number");
+
+   }
+
+   else {
+
+       for (i = 2; i < n; i++) {
+
+           if (n % i == 0) {
+
+               flag = 1;
+
+               break;
+
+           }
+
+       }
+       if (flag == 0)
+
+           printf("Prime Number");
+
+       else
+
+           printf("Not a Prime Number");
+
+   }
+   return 0;
+
+}
+
+#include <stdio.h>
+
+int main() {
+
+   int n, original, reverse = 0, rem;
+
+   printf("Enter a number: ");
+
+   scanf("%d", &n);
+
+   original = n;
+
+   while (n != 0) {
+
+       rem = n % 10;
+
+       reverse = reverse * 10 + rem;
+
+       n = n / 10;
+
+   }
+
+   if (original == reverse)
+
+       printf("Palindrome");
+
+   else
+
+       printf("Not Palindrome");
+
+   return 0;
+
+}

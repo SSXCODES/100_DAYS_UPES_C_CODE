@@ -1,12 +1,3 @@
-/*
-Write a program to find the sum of each row of a matrix and store it in an array.
-
-Sample input: 2 3
-1 2 3
-4 5 6
-Sample output: 6 15
-*/
-
 #include <stdio.h>
 
 int main(void)
